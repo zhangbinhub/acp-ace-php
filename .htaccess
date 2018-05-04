@@ -1,0 +1,20 @@
+<IfModule rewrite_module>
+	RewriteEngine on
+	RewriteCond %{SCRIPT_FILENAME} ^.*/$
+	RewriteRule ^(.*)$ $1index.php [L]
+	RewriteCond %{SCRIPT_FILENAME} ^/[a-zA-Z0-9_]+$
+	RewriteRule ^(/[a-zA-Z0-9_]+)$ $1/index.php [L]
+	RewriteCond %{SCRIPT_FILENAME} !^.*/$
+	RewriteRule ^([a-zA-Z0-9/_]+(\.php){0})$ $1.php [L]
+</IfModule>
+
+php_value upload_max_filesize 200M
+php_value post_max_size 200M
+php_value max_input_time 43200
+
+php_flag session.upload_progress.enabled on
+php_flag session.upload_progress.cleanup on
+php_value session.upload_progress.prefix upload_progress_
+php_value session.upload_progress.name PHP_SESSION_UPLOAD_PROGRESS
+php_value session.upload_progress.freq 1%
+php_value session.upload_progress.min_freq 1

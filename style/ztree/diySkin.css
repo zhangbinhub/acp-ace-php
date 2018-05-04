@@ -1,0 +1,433 @@
+.ztree * {
+    font: normal normal normal 12px/1 FontAwesome
+}
+
+.ztree li {
+    line-height: 17px;
+}
+
+.ztree li ul.line {
+    background-image: none;
+}
+
+.ztree li a {
+    vertical-align: middle;
+}
+
+.ztree li a.curSelectedNode {
+    height: 18px;
+}
+
+.ztree li span.button {
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0px solid;
+    cursor: pointer;
+    outline: none;
+}
+
+.ztree li span.button.root_open {
+    background-image: none;
+}
+
+.ztree li span.button.root_close {
+    background-image: none;
+}
+
+.ztree li span.button.root_docu {
+    background-image: none;
+}
+
+.ztree li span.button.roots_open {
+    background-image: none;
+}
+
+.ztree li span.button.roots_close {
+    background-image: none;
+}
+
+.ztree li span.button.roots_docu {
+    background-image: none;
+}
+
+.ztree li span.button.center_open {
+    background-image: none;
+}
+
+.ztree li span.button.center_close {
+    background-image: none;
+}
+
+.ztree li span.button.center_docu {
+    background-image: none;
+}
+
+.ztree li span.button.bottom_open {
+    background-image: none;
+}
+
+.ztree li span.button.bottom_close {
+    background-image: none;
+}
+
+.ztree li span.button.bottom_docu {
+    background-image: none;
+}
+
+.ztree li span.button.root_open::before {
+    content: "\f078";
+    padding-top: 10px;
+    padding-left: 2px;
+    display: inline-block;
+    background-image: none;
+}
+
+.ztree li span.button.root_close::before {
+    content: "\f054";
+    padding-top: 10px;
+    padding-left: 2px;
+    display: inline-block;
+}
+
+.ztree li span.button.roots_open::before {
+    content: "\f078";
+    padding-top: 10px;
+    padding-left: 2px;
+    display: inline-block;
+    background-image: none;
+}
+
+.ztree li span.button.roots_close::before {
+    content: "\f054";
+    padding-top: 10px;
+    padding-left: 2px;
+    display: inline-block;
+    background-image: none;
+}
+
+.ztree li span.button.center_open::before {
+    content: "\f078";
+    padding-top: 10px;
+    padding-left: 2px;
+    display: inline-block;
+    background-image: none;
+}
+
+.ztree li span.button.center_close::before {
+    content: "\f054";
+    padding-top: 10px;
+    padding-left: 2px;
+    display: inline-block;
+    background-image: none;
+}
+
+.ztree li span.button.bottom_open::before {
+    content: "\f078";
+    padding-top: 10px;
+    padding-left: 2px;
+    display: inline-block;
+    background-image: none;
+}
+
+.ztree li span.button.bottom_close::before {
+    content: "\f054";
+    padding-top: 10px;
+    padding-left: 2px;
+    display: inline-block;
+    background-image: none;
+}
+
+.ztree li span.button.ico_loading:before {
+    content: "\f110";
+}
+
+.ztree li span.button.ico_loading {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 17px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+    color: #478fca !important;
+    background-image: none;
+}
+
+/* custom skins */
+.ztree li span.button.edit {
+    margin-left: 4px;
+    margin-right: -1px;
+    vertical-align: top;
+    *vertical-align: middle;
+    padding-top: 10px;
+}
+
+.ztree li span.button.edit::before {
+    content: "\f044";
+    font-family: FontAwesome;
+}
+
+.ztree li span.button.remove {
+    margin-left: 4px;
+    margin-right: -1px;
+    vertical-align: top;
+    *vertical-align: middle;
+    padding-top: 10px;
+}
+
+.ztree li span.button.remove::before {
+    content: "\f1f8";
+    font-family: FontAwesome;
+}
+
+.ztree li span.button.add {
+    margin-left: 4px;
+    margin-right: -1px;
+    vertical-align: top;
+    *vertical-align: middle;
+    padding-top: 10px;
+}
+
+.ztree li span.button.add::before {
+    content: "\f067";
+    font-family: FontAwesome;
+}
+
+.ztree li span.button.add {
+    margin-left: 2px;
+    margin-right: 2px;
+    background-position: -144px -0px;
+    vertical-align: top;
+    *vertical-align: middle
+}
+
+/* menu begin */
+.ztree li span.button.menutree_ico_open:before {
+    content: "\f07c";
+}
+
+.ztree li span.button.menutree_ico_open {
+    background-image: none;
+    color: #87b87f !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+.ztree li span.button.menutree_ico_close:before {
+    content: "\f07b";
+}
+
+.ztree li span.button.menutree_ico_close {
+    background-image: none;
+    color: #333333 !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+.ztree li span.button.menutree_ico_docu:before {
+    content: "\f022";
+}
+
+.ztree li span.button.menutree_ico_docu {
+    background-image: none;
+    color: #c6699f !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+/* menu end */
+
+/* module begin */
+.ztree li span.button.moduletree_ico_open:before {
+    content: "\f0e8";
+}
+
+.ztree li span.button.moduletree_ico_open {
+    background-image: none;
+    color: #87b87f !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+.ztree li span.button.moduletree_ico_close:before {
+    content: "\f0e8";
+}
+
+.ztree li span.button.moduletree_ico_close {
+    background-image: none;
+    color: #333333 !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+.ztree li span.button.moduletree_ico_docu:before {
+    content: "\f1de";
+}
+
+.ztree li span.button.moduletree_ico_docu {
+    background-image: none;
+    color: #478fca !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+/* module end */
+
+/* role begin */
+.ztree li span.button.roletree_ico_open:before {
+    content: "\f0c0";
+}
+
+.ztree li span.button.roletree_ico_open {
+    background-image: none;
+    color: #87b87f !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+.ztree li span.button.roletree_ico_close:before {
+    content: "\f0c0";
+}
+
+.ztree li span.button.roletree_ico_close {
+    background-image: none;
+    color: #333333 !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+.ztree li span.button.roletree_ico_docu:before {
+    content: "\f0f0";
+}
+
+.ztree li span.button.roletree_ico_docu {
+    background-image: none;
+    color: #478fca !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+/* role end */
+
+/* department begin */
+.ztree li span.button.departmenttree_ico_open:before {
+    content: "\f0c0";
+}
+
+.ztree li span.button.departmenttree_ico_open {
+    background-image: none;
+    color: #87b87f !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+.ztree li span.button.departmenttree_ico_close:before {
+    content: "\f0c0";
+}
+
+.ztree li span.button.departmenttree_ico_close {
+    background-image: none;
+    color: #333333 !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+.ztree li span.button.departmenttree_ico_docu:before {
+    content: "\f0c0";
+}
+
+.ztree li span.button.departmenttree_ico_docu {
+    background-image: none;
+    color: #478fca !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+/* department end */
+
+/* selecttree start */
+.ztree li span.button.selecttree_ico_open:before {
+    content: "\f0ca";
+}
+
+.ztree li span.button.selecttree_ico_open {
+    background-image: none;
+    color: #87b87f !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+.ztree li span.button.selecttree_ico_close:before {
+    content: "\f0ca";
+}
+
+.ztree li span.button.selecttree_ico_close {
+    background-image: none;
+    color: #333333 !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+
+.ztree li span.button.selecttree_ico_docu:before {
+    content: "\f0da";
+}
+
+.ztree li span.button.selecttree_ico_docu {
+    background-image: none;
+    color: #478fca !important;
+    text-align: center;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 0px;
+}
+
+/* selecttree end */
