@@ -2,10 +2,10 @@
 .idea
 .svn
 .git
+*.log
 
 out/
 build/
-logs/
 
 # OSX
 #
