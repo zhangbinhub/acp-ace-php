@@ -206,23 +206,23 @@
                 }]
         };
 
-        var buttons = [{
-            type: "sep"
-        }, {
-            type: "button",
-            buttonicon: "ace-icon fa fa-file-excel-o green",
-            title: "导出Excel",
-            onClickButton: function () {
-                applicationconfig.exportToFile(0);
-            }
-        }, {
-            type: "button",
-            buttonicon: "ace-icon fa fa-file-pdf-o red",
-            title: "导出PDF",
-            onClickButton: function () {
-                applicationconfig.exportToFile(1);
-            }
-        }];
+        // var buttons = [{
+        //     type: "sep"
+        // }, {
+        //     type: "button",
+        //     buttonicon: "ace-icon fa fa-file-excel-o green",
+        //     title: "导出Excel",
+        //     onClickButton: function () {
+        //         applicationconfig.exportToFile(0);
+        //     }
+        // }, {
+        //     type: "button",
+        //     buttonicon: "ace-icon fa fa-file-pdf-o red",
+        //     title: "导出PDF",
+        //     onClickButton: function () {
+        //         applicationconfig.exportToFile(1);
+        //     }
+        // }];
 
         AUI.grid.generateGrid(
             grid_selector,
@@ -249,7 +249,7 @@
                         autoclose: true
                     });
                 form.find('input[type=checkbox]').addClass('ace ace-switch ace-switch-6').after('<span class="lbl"></span>');
-            }, buttons);
+            });
     };
 
     /**
@@ -258,21 +258,21 @@
      * @param flag
      *            0-Excel，1-PDF
      */
-    applicationconfig.exportToFile = function (flag) {
-        var name = "";
-        if (flag == 0) {
-            name = "application/appExcel";
-        } else if (flag == 1) {
-            name = "application/appPDF";
-        }
-        admin_tools_obj.doAjaxToServer(name, null, function (data) {
-            if (data.errmsg) {
-                AUI.dialog.alert(data.errmsg, null, 3);
-            } else {
-                admin_tools_obj.doDownloadFromBack(data.data, true, false);
-            }
-        });
-    };
+    // applicationconfig.exportToFile = function (flag) {
+    //     var name = "";
+    //     if (flag == 0) {
+    //         name = "application/appExcel";
+    //     } else if (flag == 1) {
+    //         name = "application/appPDF";
+    //     }
+    //     admin_tools_obj.doAjaxToServer(name, null, function (data) {
+    //         if (data.errmsg) {
+    //             AUI.dialog.alert(data.errmsg, null, 3);
+    //         } else {
+    //             admin_tools_obj.doDownloadFromBack(data.data, true, false);
+    //         }
+    //     });
+    // };
 
     /**
      * 生成信息配置列表
