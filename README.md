@@ -3,7 +3,7 @@
 # 环境要求
 - php 7 以上
 - mysql 5.6 以上
-- apache 2.4.20 以上
+- apache 2.4.20 以上 
 
 # php 环境安装
 ### windows
